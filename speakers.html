@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ICRASST 2025</title>
+  <link href="css/styles.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    
+    body{
+       background-color: #f0f2f5;
+    }
+    h1 {
+      margin: 5px 0 0;
+      font-size: 2em;
+      font-weight: 100;
+      color: #1B3A6B;
+      text-transform: uppercase;
+      text-align: center;
+    }
+    h2 {
+      margin-top: 5px;
+      font-size: 1em;
+      font-weight: 500;
+      color: hsl(0, 74%, 27%);
+      letter-spacing: 0.5px;
+      font-family: 'Merriweather', serif;
+      text-align: center;
+    }
+
+    .person-card {
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      padding: 10px;
+      background-color: #f9f9f9;
+      box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+      height: 100%;
+    }
+    .person-card img {
+      border-radius: 10px;
+      margin-bottom: 10px;
+    }
+    .person-name {
+      font-weight: bold;
+      margin-bottom: 5px;
+      color: #1B3A6B;
+    }
+    .person-desc {
+      font-size: 0.9em;
+      color: #333;
+    }
+
+
+.inaugurator-card {
+  max-width: 300px;  
+  margin: auto;
+}
+.inaugurator-card img {
+  width: 180px;
+  height: 180px;
+}
+.speaker-card {
+  max-width: 260px;
+  margin: auto;
+}
+.speaker-card img {
+  width: 140px;
+  height: 140px;
+}
+
+
+    .themes-section {
+    background: hsl(211, 38%, 78%); /* light gray */
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0px 2px 8px rgba(0,0,0,0.1);
+  }
+
+  .themes-section h2 {
+    color: #1B3A6B;
+    font-weight: bold;
+    border-left: 5px solid #1B3A6B;
+    padding-left: 10px;
+  }
+
+  .themes-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .themes-list li {
+    font-size: 1.1em;
+    font-weight: bold;
+    margin-bottom: 10px;
+    padding-left: 25px;
+    position: relative;
+    color: hsl(311, 84%, 24%);
+    font-family: 'Merriweather', serif; /* Modern clean font */
+  }
+
+  .themes-list li::before {
+    content: "➤";
+    color: #1B3A6B;
+    font-size: 1em;
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+    
+
+  </style>
+</head>
+
+
+<div class="container header-box">
+  <header style="text-align: left;" class="py-3">
+    <div class="d-flex align-items-center">
+      <img src="images/logo.png" alt="Logo" style="height: 100px; width: auto; margin-right: 20px; margin-left: 20px;">
+      <div>
+        <h4 class="mb-0">ICRASST 2025</h4>
+        <small>St. George’s College Aruvithura</small><br>
+        <small>1 - 2 December 2025</small><br>
+        <small><em>Recent Advancements in Science, Social Science, and Technology</em></small>
+      </div>
+    </div>
+  </header>
+
+  <nav class="navbar navbar-expand-lg" aria-label="Main navigation">
+    <div class="container-fluid">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="mainNavbar">
+        <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Authors</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="cfp.html">Call for Paper</a></li>
+              <li><a class="dropdown-item" href="submission.html">Submission</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="organiser.html">Organisers</a></li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Program</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#speakers">Speakers</a></li>
+              <li><a class="dropdown-item" href="schedule.html">Schedule</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="register.html">Registration</a></li>
+          <li class="nav-item"><a class="nav-link" href="awards.html">Awards</a></li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">About</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="venue.html">Venue</a></li>
+              <li><a class="dropdown-item" href="conference.html">Conference</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a href="contact.html" class="btn btn-primary btn-sm mx-3 my-1">Contact Us</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Archives</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="ICRASST-2024">ICRASST 2024</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</div>
+
+
+
+<body class="position-relative">
+
+  <div class="container py-5">
+    <!-- Logos in same row -->
+    <div class="row justify-content-center align-items-center">
+      <div class="col-auto">
+        <img src="images/a++2.png" alt="a++" style="max-width: 160px; height: auto;">
+      </div>
+      <div class="col-auto">
+        <img src="images/jubilee.png" alt="60 Years Logo" style="max-width: 500px; width: 100%; height: auto;">
+      </div>
+
+    <!-- Title -->
+    <h1>ICRASST 2025</h1>
+    <p style="text-align: center;">1-2 DECEMBER 2025</p>
+    <h2>
+      International Conference on <br><strong>Recent Advancements in Science, Social Science and Technology</strong><br>
+      <span style="color: blueviolet;">Hybrid mode conference</span>
+    </h2>
+  </div>
+
+
+  <section id="speakers" class="py-5">
+  <div class="container">
+    <h2 class="section-title text-center mb-5">INAUGURATOR</h2>
+
+    <!-- Inaugurator -->
+    <div class="row justify-content-center mb-5">
+      <div class="col-12 col-md-4">
+
+        <div class="card inaugurator-card h-100 text-center shadow-sm border-0">
+          <img src="images/perosonPlaceholder.png" 
+               class="card-img-top rounded-circle p-4 mx-auto" alt="Inaugurator">
+          <div class="card-body">
+            <h5 class="card-title">INAUGURATOR</h5>
+            <p class="card-text text-muted">Designation / Institution</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Speakers Row 1 -->
+     <h2 style="font-size: 2em;">SPEAKERS</h2><br><br>
+     <div class="row justify-content-center mb-4">
+      <div class="col-6 col-md-4">
+        <div class="card speaker-card h-100 text-center shadow-sm border-0">
+          <img src="images/perosonPlaceholder.png" 
+               class="card-img-top rounded-circle p-3 mx-auto" alt="Speaker 1">
+          <div class="card-body">
+            <h5 class="card-title">SPEAKER 1</h5>
+            <p class="card-text text-muted">Designation / Institution</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-6 col-md-4">
+        <div class="card speaker-card h-100 text-center shadow-sm border-0">
+          <img src="images/perosonPlaceholder.png" 
+               class="card-img-top rounded-circle p-3 mx-auto" alt="Speaker 2">
+          <div class="card-body">
+            <h5 class="card-title">SPEAKER 2</h5>
+            <p class="card-text text-muted">Designation / Institution</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Speakers Row 2 -->
+    <div class="row justify-content-center">
+      <div class="col-6 col-md-4">
+        <div class="card speaker-card h-100 text-center shadow-sm border-0">
+          <img src="images/perosonPlaceholder.png" 
+               class="card-img-top rounded-circle p-3 mx-auto" alt="Speaker 3">
+          <div class="card-body">
+            <h5 class="card-title">SPEAKER 3</h5>
+            <p class="card-text text-muted">Designation / Institution</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-6 col-md-4">
+        <div class="card speaker-card h-100 text-center shadow-sm border-0">
+          <img src="images/perosonPlaceholder.png" 
+               class="card-img-top rounded-circle p-3 mx-auto" alt="Speaker 4">
+          <div class="card-body">
+            <h5 class="card-title">SPEAKER 4</h5>
+            <p class="card-text text-muted">Designation / Institution</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+
+  <!-- Major Themes Section -->
+<div class="container mt-5 themes-section">
+  <h2 class="text-start mb-4">MAJOR THEMES</h2>
+  <ul class="themes-list text-start">
+    <li>ADVANCEMENT IN SCIENCE AND TECHNOLOGY</li>
+    <li>INNOVATIONS IN COMMERCE AND MANAGEMENT</li>
+    <li>INTERDISCIPLINARY APPROACHES TO SUSTAINABLE DEVELOPMENT</li>
+    <li>RECENT TRENDS IN SOCIAL SCIENCES AND HUMANITIES</li>
+    <li>MATHEMATICAL MODELING AND COMPUTATIONAL TECHNIQUES</li>
+  </ul>
+</div>
+
+
+  <footer class="bg-dark text-white text-center py-4 mt-5">
+	  <div class="container">
+	    <p class="mb-0">&copy; ICRASST 2025 - St. George’s College Aruvithura</p>
+       <p class="mb-0">Developers: Arjun Prasanth, Abhiram N Namboothiri, Jeswin Joji, Aliya Mujeeb, Achu Stephen, Alana Tess Martin </p>
+	  </div>
+	</footer>
+
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
