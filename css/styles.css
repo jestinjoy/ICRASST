@@ -41,6 +41,11 @@
         text-align: justify;
       }
 
+      footer p {
+  text-align: center !important;
+}
+
+
       .navbar {
         background: rgba(255, 255, 255, 0.75) !important;
         backdrop-filter: blur(10px);
